@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <script src="https://d3js.org/d3.v6.min.js"></script>
+        <script src="https://unpkg.com/topojson@3"></script>
+        <script src="main.js" defer></script>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css"
+        />
+        <title>7th Lab</title>
+    </head>
+
+    <body>
+        <div>
+            <h2>Airport Connections</h2>
+
+            <p>Select one to display:</p>
+            <div style="display: flex; float: left; margin-left:50px ">
+                <input style="margin: 5px;" type="radio" id="force" name="display" value="force" checked>
+                    <label for="force">Force</label>
+                    <input style="margin: 5px; margin-left:25px;" type="radio" id="map" name="display" value="map">
+                    <label for="map">Map</label>
+                    <div class="tooltip"></div>
+            </div>
+
+            <div class="chart-container1">
+            </div>
+
+        </div>
+    </body>
+</html>
+
